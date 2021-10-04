@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+ 
+
+
+:root{
+  --box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d;
+
+  /* --box-shadow:0 1px 3px #e1d8d8; */
+}
+ 
+*{
+  box-sizing: border-box;
+}
+ body {
+background-color: #f7f7f7;
+ font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 90vh;
+margin: 0;
+/* font-family: "Lato",sans-serif; */
+;
+
+}
+.container{
+  /* margin-left: 34px; */
+  margin: 30px auto;
+  width: 350px;
+}
+h1{
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+h2{
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+h3{
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  text-align: center;
+}
+h4{
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+  
+
+.inc-exp-container{
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid rgb(222, 222, 222);
+}
+.inc-exp-container > div {
+  text-align: center;
+  flex: 1 1 0%;
+}
+
+.inc-exp-container >div{
+  flex: 1;
+  text-align: center;
+}
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.money.plus {
+  color: #b6960a;
+  font-weight: 700;
+}
+
+.money.minus {
+  color: #2da3ad;
+  font-weight: 700;
+}
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+}
+.list{
+
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .list li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.list li.plus, .list li.plus:hover {
+  border-right: 5px solid rgb(182, 150, 10);
+}
+
+  .list li.plus:hover {
+    background-color: #b6960a;
+    color: #f7f7f7;
+}
+
+.list li.minus{
+  border-right: 5px solid #2da3ad;
+}
+.list li.minus:hover {
+  background-color: #21d2e1;
+  color: #f7f7f7;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%,-50%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+label {
+  display: inline-block;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+label {
+  cursor: default;
+}
+.btn {
+  cursor: pointer;
+  background-color: #5495e9;
+  box-shadow: var(--box-shadow);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: 10px 0px 30px;
+}
+
+
+.btn, input[type="number"], input[type="text"] {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+input[type="number"], input[type="text"] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(222, 222, 222);
+  border-image: initial;
+  border-radius: 5px;
+}
+
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
